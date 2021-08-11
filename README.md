@@ -1,6 +1,6 @@
 # Readme.io
 
-##Its a real-time news application with news displayed in various categories and the detailed news is displayed as a webview.
+## Its a real-time news application with news displayed in various categories and the detailed news is displayed as a webview.
 
 ## Getting Started
 
