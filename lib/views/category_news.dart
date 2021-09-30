@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:news/helper/news.dart';
 import 'package:news/modals/article_modal.dart';
-import 'package:news/themes.dart';
 import 'package:news/views/home.dart';
 
 class CategoryView extends StatefulWidget {
@@ -16,6 +15,7 @@ class CategoryView extends StatefulWidget {
 class _CategoryViewState extends State<CategoryView> {
   List<ArticleModal> article = [];
   bool _loading = true;
+  var size;
 
   @override
   void initState() {
@@ -38,6 +38,7 @@ class _CategoryViewState extends State<CategoryView> {
 
   @override
   Widget build(BuildContext context) {
+    size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,

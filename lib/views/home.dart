@@ -166,13 +166,13 @@ class CategoryTileModern extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(8),
             child: Container(
-              width: 180,
-              height: 90,
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height / 3.5,
             ),
           ),
           Container(
-            height: 80,
-            width: 180,
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height / 3.5,
             alignment: Alignment.center,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(6),
@@ -222,8 +222,8 @@ class BlogTile extends StatelessWidget {
           children: [
             ClipRRect(
               child: Container(
-                width: 500,
-                height: 250,
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height / 3.5,
                 child: Image.network(
                   imageUrl,
                   fit: BoxFit.cover,
@@ -249,6 +249,7 @@ class BlogTile extends StatelessWidget {
 class BlogTileModern extends StatelessWidget {
   final String imageUrl, title, desc;
   final String url;
+
   BlogTileModern(
       {@required this.desc,
       @required this.imageUrl,
@@ -285,8 +286,8 @@ class BlogTileModern extends StatelessWidget {
                   children: [
                     ClipRRect(
                       child: Container(
-                        width: 500,
-                        height: 250,
+                        width: MediaQuery.of(context).size.width,
+                        height: MediaQuery.of(context).size.height / 3.5,
                         child: Image.network(
                           imageUrl,
                           fit: BoxFit.cover,
